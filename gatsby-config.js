@@ -1,43 +1,20 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
-  siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
-  },
-  plugins: [
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-  ],
+  siteTitle: 'New Mexico Talent Pipeline', // Site title.
+  siteTitleAlt: 'Talent Development Playbook', // Alternative site title for SEO.
+  siteLogo: 'NMLogo.png', // Logo used for SEO and manifest.
+  siteUrl: 'https://gatsby-starter-business.netlify.com', // Domain of your website without pathPrefix.
+  // Do not use trailing slash!
+  pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
+  siteDescription: 'Leverage Gatsby Business Starter for your Business.', // Website description used for RSS feeds/meta description tag.
+  siteRss: '/rss.xml',
+  siteFBAppID: '', // FB Application ID for using app insights
+  googleTagManagerID: '', // GTM tracking ID.
+  disqusShortname: 'gatsby-business-starter', // Disqus shortname.
+  userName: 'Vaibhav Sharma',
+  userTwitter: 'vaibhaved',
+  userLocation: 'Delhi NCR, India',
+  userDescription: '',
+  copyright: 'Copyright © Gatsby Starter Business 2018. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
+  themeColor: '#00d1b2', // Used for setting manifest and progress theme colors.
+  backgroundColor: '#ffffff', // Used for setting manifest background color.
 }
